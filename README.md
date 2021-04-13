@@ -19,7 +19,7 @@ You can see the list of all options and their default values via:
 
 ## HW1 Search  
 
-DFS, BFS, UCS, ASTAR, ASTAR heuristic  
+* DFS, BFS, UCS, ASTAR, ASTAR heuristic  
 
     $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs 
     $ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5  
