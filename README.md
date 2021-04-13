@@ -21,10 +21,10 @@ You can see the list of all options and their default values via:
 
 * DFS, BFS, UCS, ASTAR, ASTAR heuristic  
 
-    $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs 
-    $ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5  
-    $ python pacman.py -l bigMaze -p SearchAgent -a fn=ucs  
-    $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic  
+        $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs 
+        $ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5  
+        $ python pacman.py -l bigMaze -p SearchAgent -a fn=ucs  
+        $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic  
 
 Corner problem, Corner heuristic  
     
