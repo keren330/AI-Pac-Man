@@ -18,24 +18,44 @@ You can see the list of all options and their default values via:
 
 
 ## HW1 Search  
+In this project, your Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. You will build general search algorithms and apply them to Pacman scenarios.  
 
-* DFS, BFS, UCS, ASTAR, ASTAR heuristic  
+* DFS  
 
-        $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dfs 
-        $ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5  
-        $ python pacman.py -l bigMaze -p SearchAgent -a fn=ucs  
-        $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic  
+        $ python pacman.py -l tinyMaze -p SearchAgent
+        $ python pacman.py -l mediumMaze -p SearchAgent
+        $ python pacman.py -l bigMaze -z .5 -p SearchAgent 
+     
+* BFS
 
-Corner problem, Corner heuristic  
+        $ python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+        $ python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+        
+* UCS
+
+        $ python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+        $ python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+        $ python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+        
+* Astar
+
+        $ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+        
+* Corner problem, Corner heuristic  
     
-    $ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem  
-    $ python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5  
+        $ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem  
+        $ python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5  
     
-Eating all the dots  
+* Eating all the dots  
     
-    $ python pacman.py -l trickySearch -p AStarFoodSearchAgent  
+        $ python pacman.py -l trickySearch -p AStarFoodSearchAgent  
 
 ## HW2 Multi-Agent
+In this project, you will design agents for the classic version of Pacman, including ghosts. Along the way, you will implement both minimax and expectimax search and try your hand at evaluation function design.  
 
 ## HW3 Reinforcement Learning
 In this project, you will implement value iteration and Q-learning. You will test your agents first on Gridworld (from class), then apply them to a simulated robot controller (Crawler) and Pacman.
+
+## Credits  
+This is the homework project for the course CSE511 Introduction to Artificial Intelligence (2020 Fall), at Washington University in St. Louis
+Instructor:  William Yeoh
